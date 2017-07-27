@@ -15,6 +15,7 @@ brew cask install vlc
 # dev
 brew cask install atom
 brew cask install iterm2
+brew cask install ngrok     # urls from localhost for easier mobile testing
 
 # Quick look plugins
 # For details: https://github.com/sindresorhus/quick-look-plugins

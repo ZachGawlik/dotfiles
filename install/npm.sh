@@ -6,6 +6,7 @@ packages=(
     diff-so-fancy
     git-recent
     git-open
+    serve
     trash-cli
 )
 

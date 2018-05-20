@@ -26,6 +26,7 @@ brew install imagemagick
 brew install tree
 brew install node
 brew install the_silver_searcher
+brew install yarn
 brew install zsh
 brew install zsh-syntax-highlighting
 

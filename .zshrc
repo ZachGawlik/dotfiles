@@ -68,16 +68,44 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
+###########
 # MY CONFIG
+###########
+
+# Enables double escaping like 'Don''t'
+setopt rcquotes
+
+#########
+# ALIASES
+#########
+
 alias v="vim"
 alias ls="ls -GpF"
 alias tree="tree -I node_modules"
-alias pyserv="python -m SimpleHTTPServer"
-alias npms="npm start -s" # Silences npm's errors from npm start
+
+# Git aliases
+alias gpr='git pull --rebase'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gs='git status'
+alias gc='git checkout'
+alias ga='git add'
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gb='git branch'
+alias gcb='git checkout -b'
+alias gst='git stash'
+alias gpop='git stash apply'
+alias gp='git push'
+alias gl='git log'
+alias glg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
+alias gm='git merge'
+alias gr='git reset'
+
+# Run `thefuck`
+eval $(thefuck --alias)
+
+# Enables things like git clone zachgawlik/dotfiles
+eval "$(hub alias -s)"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# for rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"

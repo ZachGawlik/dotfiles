@@ -21,6 +21,7 @@ brew install vim --override-system-vi
 # dev
 brew install diff-so-fancy
 brew install git
+brew install hub
 brew install imagemagick
 brew install tree
 brew install node

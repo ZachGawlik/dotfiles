@@ -19,6 +19,7 @@ brew upgrade
 brew install vim --override-system-vi
 
 # dev
+brew install cloc
 brew install diff-so-fancy
 brew install git
 brew install hub
@@ -26,6 +27,7 @@ brew install imagemagick
 brew install tree
 brew install node
 brew install the_silver_searcher
+brew install thefuck
 brew install yarn
 brew install zsh
 brew install zsh-syntax-highlighting

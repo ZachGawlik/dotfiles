@@ -8,7 +8,7 @@ export PATH=/usr/local/bin:$PATH
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="cobalt2"
+ZSH_THEME="cobalt2-modified"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -101,6 +101,7 @@ alias gl='git log'
 alias glg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
 alias gm='git merge'
 alias gr='git reset'
+alias glocal='git log --branches --not --remotes'
 
 # Run `thefuck`
 eval $(thefuck --alias)

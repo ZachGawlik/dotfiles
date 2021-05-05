@@ -1,0 +1,17 @@
+{
+  "name": "hyper-statusline-zachgawlik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Zach Gawlik <zachgawlik@gmail.com> (https://zachgawlik.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "after-all-results": "^2.0.0",
+    "color": "^3.1.3",
+    "tildify": "^2.0.0"
+  }
+}

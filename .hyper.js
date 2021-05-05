@@ -98,20 +98,16 @@ module.exports = {
     "hyper-night-owl",
     "hyperborder",
     "hyper-search",
-    "hyper-statusline",
     "hypercwd",
     "hyper-tab-icons",
     "hyperterm-tabs",
     "hyperterm-dibdabs",
-    // TODO: fork this, causes index lock issues on larger repos
-    // https://github.com/henrikdahl/hyper-statusline/pull/94
-    // "hyper-statusline",
   ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: [],
+  localPlugins: ['hyper-statusline-zachgawlik'],
 
   keymaps: {
     // Example

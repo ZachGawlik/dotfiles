@@ -20,15 +20,15 @@ brew install vim --override-system-vi
 
 # dev
 brew install diff-so-fancy
+brew install exa
 brew install git
+brew install gh
 brew install hub
 brew install imagemagick
 brew install tree
-brew install node
 brew install the_silver_searcher
 brew install yarn
 brew install zsh
-brew install zsh-syntax-highlighting
 
 # Remove outdated versions from the cellar
 brew cleanup

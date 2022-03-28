@@ -31,7 +31,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
@@ -46,10 +46,11 @@ ZSH_THEME_TERM_TITLE_IDLE="%~"
 # Enables double escaping like 'Don''t'
 setopt rcquotes
 
-# Run `thefuck`
 eval $(thefuck --alias)
 
-# Enables things like git clone zachgawlik/dotfiles
-eval "$(hub alias -s)"
+eval "$(pyenv init -)"
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+## Installed by nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

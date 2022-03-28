@@ -1,3 +1,23 @@
+[core]
+	ignorecase = false
+    pager = delta --diff-so-fancy
+
+[delta]
+    navigate = true
+    features = unobtrusive-line-numbers decorations
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
+    hunk-header-decoration-style = yellow box
+[merge]
+    conflictstyle = diff3
+[color]
+    ui = true
+
+[diff]
+    colorMoved = default
+
 [alias]
     cm = commit -m
     cam = commit -am
@@ -5,5 +25,3 @@
     dfc = diff --cached
     lg = log --pretty=oneline -n 20 --graph --abbrev-commit
     st = status
-[core]
-    pager = diff-so-fancy | less --tabs=4 -RFX

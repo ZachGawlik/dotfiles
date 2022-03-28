@@ -1,4 +1,4 @@
-alias v="vim"
+alias v="nvim"
 alias ls="ls -GpF"
 alias mv="mv -iv"
 alias cp="cp -iv"

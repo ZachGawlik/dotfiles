@@ -31,11 +31,14 @@ brew install git-delta
 brew install diff-so-fancy
 brew install exa
 brew install fd
+brew install fzf
 brew install git
 brew install gh
+brew install glow
 brew install --cask iterm2
 brew install jq
 brew install jid
+brew install jless
 brew install --cask kap
 brew install imagemagick
 brew install --cask ngrok
@@ -45,6 +48,7 @@ brew install tree
 brew install the_silver_searcher
 brew install yarn
 brew install zsh
+brew install zoxide
 brew install --cask visual-studio-code
 
 # python build dependencies

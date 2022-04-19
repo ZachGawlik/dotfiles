@@ -41,6 +41,7 @@ brew install jid
 brew install jless
 brew install --cask kap
 brew install imagemagick
+brew install neovim
 brew install --cask ngrok
 brew install pyenv
 brew install thefuck

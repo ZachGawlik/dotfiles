@@ -20,7 +20,9 @@ pyenv global 3.10.3
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Linking dotfiles to home"
+ln -s ~/dev/dotfiles/.aliases.zsh ~/.aliases.zsh
 ln -s ~/dev/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dev/dotfiles/.zshenv ~/.zshenv
 ln -s ~/dev/dotfiles/.zprofile ~/.zprofile
 ln -s ~/dev/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig

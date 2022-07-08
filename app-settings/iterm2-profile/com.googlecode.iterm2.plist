@@ -914,6 +914,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>24E25B14-8FD2-4829-9061-E6EA6188BE4F</string>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -1883,7 +1885,7 @@
 			<key>Unicode Version</key>
 			<integer>8</integer>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>

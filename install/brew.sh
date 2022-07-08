@@ -2,7 +2,6 @@
 
 # Check for Homebrew and install it if missing
 if test ! $(which brew)
-the
   echo "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
@@ -29,6 +28,7 @@ brew install --cask spotify
 # dev
 brew install git-delta
 brew install diff-so-fancy
+brew install bat
 brew install exa
 brew install fd
 brew install fzf

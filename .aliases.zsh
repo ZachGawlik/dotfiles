@@ -10,6 +10,7 @@ alias cp="cp -iv"
 alias tree="tree -I '.git|node_modules|DS_Store' --dirsfirst"
 
 # Git aliases
+alias g='git'
 alias gpr='git pull --rebase'
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -21,6 +22,7 @@ alias gcom='git commit -m'
 alias gcoma='git commit -a -m'
 alias gb='git branch'
 alias gcb='git checkout -b'
+alias gco='git checkout --'
 alias gst='git stash'
 alias gp='git push'
 alias gl='git log'

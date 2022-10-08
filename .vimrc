@@ -1,7 +1,6 @@
 set nocompatible
 
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-
 set scrolloff=4         " 4 line context for scrolling up/down at edge
 set wildmenu
 set wildmode=longest:list,full
@@ -21,10 +20,9 @@ set hlsearch
 nnoremap <leader><space> :nohl<cr>  " clear search highlight
 
 set wrap
-set textwidth=79
 set formatoptions=qrn1
 set list
-set listchars=tab:▸\ 
+set listchars=tab:▸\
 
 
 " allow backspacing over everything in insert mode
@@ -56,6 +54,23 @@ endif
 
 " Switch syntax highlighting on
 syntax on
+
+" ==========
+" REMAPS
+" ==========
+
+" Repeat pastes even if paste replaced something https://stackoverflow.com/questions/7163947/paste-multiple-times
+xnoremap p pgvy
+" Make Y behave like D/C. Operate from current position til end of line.
+noremap Y y$
+
+inoremap kj <esc>
+vnoremap kj <esc>
+cnoremap kj <C-C>
+
+" Reselect blocks after indenting in visual/select mode
+xnoremap < <gv
+xnoremap > >gv|
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")

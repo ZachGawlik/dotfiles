@@ -25,6 +25,7 @@ ln -s ~/dev/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dev/dotfiles/.zshenv ~/.zshenv
 ln -s ~/dev/dotfiles/.zprofile ~/.zprofile
 ln -s ~/dev/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dev/dotfiles/.vscode.vimrc ~/.vscode.vimrc
 ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
 cp -r ../oh-my-zsh-custom/* $ZSH_CUSTOM
 

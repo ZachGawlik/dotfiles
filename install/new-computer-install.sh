@@ -27,6 +27,8 @@ ln -s ~/dev/dotfiles/.zprofile ~/.zprofile
 ln -s ~/dev/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dev/dotfiles/.vscode.vimrc ~/.vscode.vimrc
 ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dev/dotfiles/app-settings/.yabairc ~/.yabairc
+ln -s ~/dev/dotfiles/app-settings/.skhdrc ~/.skhdrc
 cp -r ../oh-my-zsh-custom/* $ZSH_CUSTOM
 
 echo "Installing zsh plugins"

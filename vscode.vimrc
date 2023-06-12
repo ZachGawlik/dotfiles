@@ -7,6 +7,6 @@ inoremap kj <esc>
 vnoremap kj <esc>
 cnoremap kj <C-C>
 
-" DISABLED. Reselect blocks after indenting in visual/select mode. But VSCode breaks this
-" xnoremap < <gv
-" xnoremap > >gv|
+" Reselect blocks after indenting in visual/select mode
+xnoremap < <gv
+xnoremap > >gv|

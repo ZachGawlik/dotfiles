@@ -101,10 +101,24 @@ eval "$(pyenv init -)"
 ## Prevents clobbering HEAD^
 unsetopt extendedglob
 
-## Installed by nvm
+## Installed by nvm:
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 source ~/.config/broot/launcher/bash/br
 eval "$(zoxide init zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/zach/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+#
+#
+# Necessary until this is fixed: https://github.com/puppeteer/puppeteer/issues/7740
+# chromium must be brew installed.
+# This env var prevents npm install / yarn / pnpm from reinstalling & failing
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=`which chromium`
+
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh

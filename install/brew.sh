@@ -28,8 +28,8 @@ brew install --cask spotify
 # dev
 brew install git-delta
 brew install diff-so-fancy
-brew install bat
-brew install exa
+brew install bat   #cat replacement
+brew install exa   #ls replacement
 brew install fd
 brew install fzf
 brew install git
@@ -41,9 +41,11 @@ brew install jid
 brew install jless
 brew install --cask kap
 brew install imagemagick
+brew install mpv
 brew install neovim
 brew install --cask ngrok
 brew install pyenv
+brew install sd   #sed replacement
 brew install thefuck
 brew install tree
 brew install the_silver_searcher
@@ -51,6 +53,9 @@ brew install yarn
 brew install zsh
 brew install zoxide
 brew install --cask visual-studio-code
+
+brew install koekeishiya/formulae/skhd
+brew install koekeishiya/formulae/yabai
 
 # python build dependencies
 brew install openssl readline sqlite3 xz zlib

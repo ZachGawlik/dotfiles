@@ -1,3 +1,6 @@
+# SIP LIMITATIONS
+# yabai can't focus on a specific numbered Space
+
 # Show desktop
 alt - e : yabai -m space --toggle show-desktop
 # Much faster than default mac fullscreen
@@ -17,16 +20,8 @@ alt - l : yabai -m window --focus east
 alt - s: yabai -m display --focus west
 alt - g: yabai -m display --focus east
 
-
 # toggle float
 alt - t : yabai -m window --toggle float
-alt - r : yabai -m window --toggle sticky
-
-## Grow top or left
-shift + alt - w : yabai -m window --resize top_left:20:20
-shift + alt - d : yabai -m window --resize right:-20:0
-
-
 
 # -- Modifying the Layout --
 
@@ -36,14 +31,7 @@ shift + alt - r : yabai -m space --rotate 270
 shift + alt - y : yabai -m space --mirror y-axis
 # flip along x-axis
 shift + alt - x : yabai -m space --mirror x-axis
-# toggle window float
-shift + alt - t : yabai -m window --toggle float --grid 4:4:3:3:1:1
 
-
-# -- Modifying Window Size --
-
-# balance out tree of windows (resize to occupy same area)
-shift + alt - 0 : yabai -m space --balance
 
 # -- Moving Windows Around --
 
@@ -53,19 +41,9 @@ shift + alt - k : yabai -m window --swap north
 shift + alt - h : yabai -m window --swap west
 shift + alt - l : yabai -m window --swap east
 
-# move window and split
-ctrl + alt - j : yabai -m window --warp south
-ctrl + alt - k : yabai -m window --warp north
-ctrl + alt - h : yabai -m window --warp west
-ctrl + alt - l : yabai -m window --warp east
-
 # move window to display left and right
 shift + alt - s : yabai -m window --display west; yabai -m display --focus west;
+shift + alt - d : yabai -m window --display west; yabai -m display --focus south;
+shift + alt - s : yabai -m window --display west; yabai -m display --focus north;
 shift + alt - g : yabai -m window --display east; yabai -m display --focus east;
-
-
-# move window to space #
-# Can't actually do via yabai because --focus n needs system permissions
-# manually reimplemented via BTT
-# shift + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1 
 

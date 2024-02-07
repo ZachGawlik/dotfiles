@@ -1,5 +1,3 @@
-" Repeat pastes even if paste replaced something https://stackoverflow.com/questions/7163947/paste-multiple-times
-xnoremap p pgvy
 " Make Y behave like D/C. Operate from current position til end of line.
 noremap Y y$
 

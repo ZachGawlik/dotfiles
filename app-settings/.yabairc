@@ -3,39 +3,30 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # Visual styles
-yabai -m config window_gap 8
+yabai -m config window_gap 4
 
 # Functional styles
-# floating windows are always on top (default: off)
 yabai -m config window_topmost on
 
-
-
-# mouse settings
-yabai -m config mouse_follows_focus off 
-
-# Window opacity
-yabai -m config window_opacity on
-yabai -m config active_window_opacity 1.0
-yabai -m config normal_window_opacity 0.6
+yabai -m config mouse_follows_focus on
 
 
 yabai -m mouse_drop_action swap
 
+# sticky would be nice on a few, but requires disabling SIP 
 # List of apps not to manage
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Alfred Preferences$" manage=off
 yabai -m rule --add app="^Wally$" manage=off
+yabai -m rule --add app="^Kap$" manage=off
 yabai -m rule --add app="^Creative Cloud$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Logi Options$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Better Touch Tool$" manage=off
-yabai -m rule --add app="^Mullvad VPN$" manage=sticky
-yabai -m rule --add app="^Shottr$" manage=off
-yabai -m rule --add app="^1Password$" manage=sticky
+yabai -m rule --add app="^Mullvad VPN$" manage=off 
+yabai -m rule --add app="^Shottr$" manage=off 
+yabai -m rule --add app="^1Password$" manage=off
+yabai -m rule --add app="^Archive Utility$" manage=off
 
-echo "yabai configuration has loaded.
-
-
-## I need to figure out if there's a way to automatically float MPV and settings
+echo "yabai configuration has loaded."
